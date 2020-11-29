@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Nome: <input type="text" > <br>
+        Sobrenome: <input type="text"> <br>
+        Senha: <input type="password"> <br>
+        Opção 1: <input type="radio" name="opcoes" value="op1" value="nome"> <br>
+        Opção 2: <input type="radio" name="opcoes" value="op2" disabled > <br>
+        Opção 3: <input type="radio" name="opcoes" value="op3" readonly> <br>
+        Checkbox 1: <input type="checkbox" name="opcoes" value="op1" > <br>
+        Checkbox 2: <input type="checkbox" name="opcoes" value="op2" > <br>
+        Checkbox 3: <input type="checkbox" name="opcoes" value="op3" > <br>
+        Numero: <input type="number" min="2" max="10" size="20" maxlength="4">  <br>
+        Data: <input type="date">  <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
+
+<!-- 
+    Formulários podem conter parágrafos, listas, tabelas e imagens○
+        - Com exceção de outros formulários
+    Elementos para entrada de dados
+        - <input>, <select>, <textarea>, <button>, <datalist>, <keygen>, <output>
+    Elemento mais importante de um formulário
+        - Define elementos de entrada de dados do usuário via atributo type
+
+
+    Novos valores para atributo type de <input>
+        - color, date, datetime, datetime-local, email, month, number, range, search, tel, time, url, week, datalist
+    Também foram adicionados restrições de entrada
+
+
+    Atributos <input>
+        - Atributo value: Especifica valor inicial no campo
+        - Atributo readonly: Especifica que campo não pode ser mudado
+        - Atributo disabled: Especifica que campo está desabilitado
+        - Atributo size: Especifica o tamanho máximo em caracteres
+        - Atributo maxlength: Especifica número máximo da caracteres permitidos
+        
+        OBS: Não se confie na validação do HTML. O usuário pode facilmente modificar o 
+             código HTML. Sempre faça também a validação no lado servidor.
+ -->
