@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+} /* Resetando todas os elementos da pagina, deixando sem padding e margem */
+
+a {
+    display: block;
+    text-decoration: none;
+} /* Resetando os links da página, deixando com display block e tirando a decoração do texto */
+
+body{
+    width: 100%; /* para ocupar todo espaço da tela horizontalmente */
+    height: 100vh; /*para ocupar todo espaço da tela verticalmente*/
+
+    background-color: #faf8f8; /* definindo cor de fundo para a página*/
+
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; /* Definindo fonte*/
+}
+
+/*Estilos para o cabeçalho*/
+.header {
+    width: 100%;
+    height: 70px;
+
+    background-color: rgb(30, 30, 30);
+}
+
+.header h1{
+    color: rgb(39, 153, 230);
+    padding: 10px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+
+    display: flex;
+    align-items: center; 
+
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-size: 13.7px;
+
+    color: rgb(39, 153, 230);
+    display: block;
+    padding: 10px;
+
+    border: transparent 1px solid;
+
+    opacity: .8;
+    transition: 0.5 ease;
+}
+
+.nav-link:hover{
+    opacity: 1;
+    border: 1px solid rgb(39, 153, 230) ;
+    border-radius: 5px;
+}
+
+.nav-image img{
+    padding: 10px;
+    width: 55px;
+    height: 55px;
+    
+    opacity: .8;
+    transition: 0.5 ease;
+}
+
+.nav-image img:hover{
+    opacity: 1;
+}
