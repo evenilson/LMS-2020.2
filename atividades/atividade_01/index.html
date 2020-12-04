@@ -39,6 +39,132 @@
             </ul>
         </nav> 
     </header>
+    <div class="all-articles-container"> <!--Div que comporta todos os artigos-->
+        <article class="article"> <!-- primeiro artigo-->
+            <h1>Desvendando o React</h1> <!-- cabeçalho do artigo-->
+            <p>
+                O <strong>React</strong> é a biblioteca mais popular do JavaScript e é usada 
+                para construir uma interface de usuário (IU). Ela oferece uma resposta 
+                excelente para o usuário adicionar comandos usando um novo método de renderizar sites.
+            </p>
+            <section> <!-- primeira section do artigo-->
+                <h2>Quem criou?</h2>
+                <p>
+                    Os componentes dessa ferramenta foram desenvolvidos pelo <strong><i>Facebook</i></strong>.
+                    Ela foi lançada em 2013 como uma ferramenta JavaScript de código aberto. 
+                    Atualmente, ela permanece na frente das suas principais
+                    competidoras, como a Angular e a Bootstrap, as duas bibliotecas JavaScript mais bem vendidas.  
+                </p> 
+            </section>
+            <section> <!-- segunda section do artigo-->
+                <h2>Como funciona?</h2>
+                <p>
+                    A maior parte do React é escrito em JSX (JavaScript XML) 
+                    em vez de apenas usar o padrão JS de escrita no JavaScript. 
+                    Contudo, saiba que isso acontece apenas porque é mais fácil de criar componentes React.
+                </p>
+                <p>
+                    Você pode criar um componente React com o JavaScript padrão. 
+                    Mas garantimos a você que será um pouco mais trabalhoso e bagunçado. 
+                </p>
+                <p>
+                    Fora isso, a ideia por trás do uso do JSX no React é que o Facebook 
+                    (o desenvolvedor inicial) queria fornecer um tipo de extensão de sintaxe 
+                    com uma configuração limpa e sem ambiguidades aos desenvolvedores.
+                </p>
+            </section>
+            <i>Fonte: <a href="https://www.hostinger.com.br/tutoriais/o-que-e-react-javascript#:~:text=O%20React%20%C3%A9%20a%20biblioteca,novo%20m%C3%A9todo%20de%20renderizar%20sites.&text=Ela%20foi%20lan%C3%A7ada%20em%202013%20como%20uma%20ferramenta%20JavaScript%20de%20c%C3%B3digo%20aberto." target="_blank">Blog Hostinger Tutoriais</a></i>
+        </article>
+        <article class="article article-table"> <!-- segundo artigo-->
+            <h1>Analizando o React</h1> <!-- cabeçalho do artigo-->
+            <section>
+                <h2>Quem utiliza? </h2>
+                <p>
+                    Muitas empresas utilizam o React, como o Facebook,
+                    Instagram, Netflix, Spotify, Airbnb, americanas.com,
+                    Uber, Paypal, Walmart e muitos outros…
+                </p>
+            </section>
+            <section>
+                <h2>Vantagens e Desvantagens</h2>
+                <table > <!-- tabela no artigo-->
+                    <caption>Tabela de Vantagens e Desvantagens</caption>
+                    <tr>
+                        <th>Vantagens</th>
+                        <th>Desvantagens</th>
+                    </tr>
+                    <tr>
+                        <td>Flexível</td>
+                        <td>Documentação oficial reduzida</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Permite usar javascript, ES6(javascript moderno com novas funcionalidades), 
+                            TypeScript …
+                        </td>
+                        <td>
+                            É livre para definir padrão, o que pode gerar projetos
+                            pouco escaláveis, caso não se
+                            ja estudado e se procure uma boa estrutura do projeto.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            JSX, uma das características mais fantásticas do react, 
+                            que é poder escrever HTML e css dentro de um arquivo javascript, 
+                            e além disso todos os recursos da linguagem como loops, funções de formatação, validações e muito mais.
+                        </td>
+                        <td>
+                            JSX, apesar de ser incrível usar HTML com javascript pode
+                            ser um pesadelo para quem está começando agora, 
+                            ou até mesmo para quem prefere trabalhar com HTML, CSS e JavaScript separado.
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <i>Fonte: <a href="https://medium.com/@henrique.freire/react-vue-angular-conhe%C3%A7a-suas-vantagens-e-desvantagens-e-qual-%C3%A9-melhor-para-seus-projetos-53734bb3d37f" target="_blank">Blog Henrique Freire</a></i>
+        </article>
+        <article class="article"> <!-- terceiro artigo-->
+            <h1>Saiba mais sobre nós</h1>
+            <section>
+                <h2>Quem somos? </h2>
+                <p> <!-- tava sem criatividade para criar um texto-->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sed quia debitis explicabo, laborum beatae repudiandae 
+                    enim eos eius sequi. Natus accusantium suscipit ab magni atque consequuntur quos odit autem sunt.
+                </p> 
+            </section>
+            <section class="article-form">
+                <form action="#"> <!-- formulario num artigo-->
+                    <h3>Preencha para saber mais</h3>
+                    <input class="form-input" type="text" placeholder="Nome" maxlength="15"> <!-- campo com tamanho limite de caracteres-->
+                    <input class="form-input" type="text" placeholder="Sobrenome, não pode colocar :)" readonly> <!-- canmpo somente leitura-->
+                    <input class="form-input" type="number" min="25000" max="30000" placeholder="Numero entre 25000 e 30000"> <!-- campo número com valor máximo e mínimo-->
+                     
+                    <div class="article-form-cheks"> <!-- inputs tipo radio-->
+                        <strong><i>Qual seu sexo: </i></strong>
+                        <input type="radio" name="sexo" id="masculino" value="masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="sexo" id="feminino" value="feminino">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" name="sexo" id="outro" value="outro">
+                        <label for="outro">Outro</label> 
+                    </div>
+
+                    <div class="article-form-cheks"> <!-- inputs tipo checkbox-->
+                        <strong><i>Linguagens conhecidas: </i></strong>
+                        <input type="checkbox" name="linguagem" id="javascript" value="javascript">
+                        <label for="javascript">JavaScript</label>
+                        <input type="checkbox" name="linguagem" id="html" value="html">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="linguagem" id="css" value="css">
+                        <label for="css">CSS</label> 
+                    </div>
+                    <button class="form-input" type="submit"> <strong>enviar</strong> </button>
+                </form>
+            </section>
+        </article>
+    </div>
 </body>
 </html>
 

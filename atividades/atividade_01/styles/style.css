@@ -84,3 +84,130 @@ body{
 .nav-image img:hover{
     opacity: 1;
 }
+
+.all-articles-container{
+    max-width: 1020px;
+    margin: 30px auto;
+    padding: 20px;
+
+    background-color: white;
+    box-shadow: 1px 1px 6px rgb(197, 195, 195);
+    border-radius: 3px;
+
+}
+
+
+.article {
+    padding: 20px;
+    margin: 30px 0;
+
+    font-size: 15px;
+}
+
+
+.article p, h2{ 
+    margin: 15px 0;
+}
+
+.article a{
+    display: inline;
+    
+}
+
+.article h1{
+    font-size:35px;
+}
+
+/*Estilos para tabelas*/
+.article-table table, td, th{
+    width: 100%;
+    border: thin solid rgba(199, 194, 194, .6);
+    border-collapse: collapse;
+    margin: 8px 0;
+    padding: 5px;
+
+    
+}
+
+.article-table caption{
+    padding: 3px;
+}
+
+.article-table td, th {
+    width: 50%;
+}
+
+
+/*Estilos para formulario*/
+.article-form{
+    width: 100%;
+
+}
+
+.article-form form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: thin solid rgba(199, 194, 194, .6);
+    border-radius: 20px;
+}
+
+.form-input{
+    width: 430px;
+    padding: 15px;
+    margin: 6px;
+
+    background-color: white;
+    box-shadow: 1px 1px 6px rgb(197, 195, 195);
+
+    border: none;
+    border-radius: 20px;
+
+    transition: 0.5 ease-in;
+    
+}
+
+.form-input:focus{
+    width: 440px;
+    
+}
+
+.article-form-cheks{
+    width: 430px;
+    padding: 10px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.form-input[type=submit] {
+    width: 100px;
+    padding: 15px;
+    margin: 20px;
+
+    background-color: rgb(39, 153, 230);
+    color: white;
+
+    text-transform: uppercase;
+    font-size: 15px;
+
+    border: none;
+    border-radius: 20px;
+
+    transition: 0.5 ease;
+}
+
+
+
+.form-input[type=submit]:hover{
+    width: 110px;
+    cursor: pointer;
+}
