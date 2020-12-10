@@ -1,0 +1,176 @@
+.div1{
+    background-color: blue;
+    height: 200px;
+    width: 300px;
+
+    border-style: dashed dotted ridge groove;
+    border-width: 10px 20px 30px 40px;
+    border-color: green red pink;
+
+    /* margin-bottom: 30px;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-right: 20px; */
+
+    /* Equivale ao código comentado acima */
+    margin: 50px 20px 20px 40px;    
+
+}
+
+.div2{
+    background-color: green;
+    height: 200px;
+    width: 300px;
+
+    border: 6px solid black;
+}
+
+.div3{
+    background-color: greenyellow;
+    width: 400px;
+    height: 400px;
+
+    /* padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; */
+
+    /* Equivale ao código comentado acima */
+    padding: 20px;
+}
+
+
+
+
+/* 
+    Modelo de Caixa CSS
+        - Content: O conteúdo da caixa
+        - Padding: Espaço ao redor do conteúdo. Padding transparente
+        - Border: É desenhada em torno do padding e do conteúdo
+        - Margin: Margem para elementos ao lado. A margem é transparente.
+
+    Ao definir Width e Height dos elementos, estamos apenas definindo largura e altura da área do conteúdo
+        - Para calcular a área completa do elemento, devemos considerar também padding, 
+          border e margin
+
+            div{
+                width: 320px;
+                padding: 10px;
+                border: 5px solid gray;
+                margin: 15px;
+            }
+
+        Largura total = 
+            width + (padding esquerdo e direito) + (margin esquerdo e direito) + (border esquerdo e direito) 
+            = 320 + 2*10 + 2*5 + 2*15 = 380
+*/
+
+/* 
+    Bordas
+        Propriedade border-style
+            - Especifica qual o tipo de borda
+            - Valores
+                - dotted: linha pontilhada
+                - dashed: linha tracejada
+                - solid: linha sólida
+                - double: linha dupla
+                - groove: 3D grooved border
+                - ridge: 3D ridged border
+                - inset: 3D inset border
+                - outset: 3D outset border
+                - none: sem borda
+                - hidden: borda escondida○
+                
+            Pode colocar 1 a 4 valores (top border, right border, bottom border, and the left border)
+
+            Ex: 
+                p {
+                    border-style:dotted solid dotted solid;
+                }
+        
+        Propriedade border-width
+            - Largura da borda
+            - 1 a 4 valores em ordem: top border, rightborder, bottomborder, andtheleftborder
+                Ex:
+                    p.three{
+                        border-style: solid;
+                        border-width: 2px 10px 4px 20px;
+                    }
+        
+        Propriedade border-color
+            - Cor da borda
+            - 1 a 4 valores em ordem: top border, rightborder, bottomborder, andtheleftborder
+                Ex: 
+                    p.three{
+                        border-style: solid;
+                        border-color: red green blue yellow;
+                    }
+
+        Propriedade border
+            - Atalho para as propriedades border-width, border-style (requerido), border-color
+                Ex:
+                    p{
+                        border: 5px solid red;
+                    }
+                    p {
+                        border-left:6px solid red;
+                        background-color:lightgrey;
+                    }
+
+*/
+
+/* 
+    Margens
+
+    Propriedades margin-top, margin-right, margin-bottome margin-left
+        - Valores:
+            - auto: o navegador calcula a margem para centralizar o 
+                elemento (também serve para centralizar div!) tamanho em px, pt, cm, etc.% da 
+                largura do elemento que o contém.
+            - inherit: a margem é herdada do elemento pai
+            
+        - Dica: valores negativos são permitidos
+        
+
+        Ex: 
+            p {
+                margin-top:100px;
+                margin-bottom:100px;
+                margin-right:150px;
+                margin-left:80px;
+            }
+    
+    Propriedade margin
+        - Atalho para margin-top, margin-right, margin-bottom e margin-left (nessa ordem)
+            p {
+                margin:100px 150px 100px 80px;
+            }
+*/
+
+/* 
+    Padding
+        - Padding gera espaço ao redor do conteúdo
+        - Propriedade padding-top, padding-right, padding-bottome padding-left
+        - Valores:
+            - tamanho em px, pt, cm, etc.
+            - % da largura do elemento que o contém
+            - inherit-a margem é herdada do elemento pai
+            
+            Ex:
+                p {
+                    padding-top:50px;
+                    padding-right:30px;
+                    padding-bottom:50px;
+                    padding-left:80px;
+                }
+        
+        Propriedade padding
+            - Atalho para padding-top, padding-right, padding-bottom e padding-left
+            
+            Ex:
+                p {
+                    padding:50px 30px 50px 80px;
+                }
+
+*/
+

@@ -1,0 +1,12 @@
+.div1{
+    background-color: green;
+    width: 400px;
+    height: 400px;
+}
+
+.div2{
+    background-color: blue;
+    width: 200px;
+    height: 400px;
+    margin: auto; /* Resposanvel por centralizar horizontalmente a div*/
+}
