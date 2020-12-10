@@ -1,0 +1,28 @@
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    color: hotpink;
+}
+
+a:active{
+    color: indigo;
+}
+
+/* 
+    Pseudo-classes
+        - elementos podem ser estilizados segundo seus estados
+            a:link - um link não visitado
+            a:visitedum - link visitado
+            a:hover - um link quando o mouse passa por cima
+            a:active -um link no momento que é clicado
+
+        Exemplos nos códigos acima
+
+        OBS: a:hover tem que vir depois de a:link e a:visited. a:active deve vir depois de a:hover
+*/

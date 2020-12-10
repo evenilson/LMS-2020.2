@@ -1,0 +1,48 @@
+.meu-paragrafo{
+    color: red;
+
+    text-align: center;
+
+    text-decoration: line-through;
+
+    text-transform: capitalize;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    font-size: 40px;
+}
+
+/* 
+    Texto
+        - Propriedade color
+            - Muda cor do texto
+                Ex: Linha 2.
+        
+        - Propriedade text-align
+            - Define alinhamento horizontal do texto
+            - Valores: center, left, right, justify
+                Ex: Linha 4.
+        
+        - Propriedade text-decoration
+            - Define decorações no texto
+            - Valores: none, overline, line-through e underline
+                Ex: Linha 6.
+
+        - Propriedade text-transform
+            - Especifica casedas letras
+            - Valores: uppercase, lowercase e capitalize
+                Ex: Linha 8
+
+        - Propriedade font-famil
+            - Define vários nomes de fontes
+            - Se o navegador não suportar a primeira fonte, ele tenta a segundo e assim em diante
+            - Melhor usar a fonte desejada no começo e depois colocar famílias de fontes 
+              genéricas para o navegador escolher a que tiver suporte
+                Ex: Linha 10
+
+        - Propriedade font-size
+            - Define tamanho do texto
+            - Tamanho padrão da fonte é 16px
+                Ex: Linha 12
+
+*/
