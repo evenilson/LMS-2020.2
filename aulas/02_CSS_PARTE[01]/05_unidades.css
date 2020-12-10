@@ -1,0 +1,39 @@
+.div1{
+    background-color: blue;
+    width: 500px;
+    height: 10cm;
+}
+
+.div2{
+    background-color: green;
+    width: 50%;
+    height: 50%;
+}
+
+/* 
+    Unidades CSS
+        - Em CSS, existem dois tipos de unidades
+            - Absolutas -comprimentos são fixos:
+                - cm: centímetros
+                - mm: millimeters
+                - in: polegadas (1in = 96px = 2.54cm)
+                - px: pixels (1px = 1/96th de 1in)
+                - pt: points (1pt = 1/72 of 1in)
+                - pc: picas (1pc = 12 pt)
+
+                Exemplos na div1
+
+            Relativos -comprimentos relativos a outros comprimentos
+                - em: Relative to the font-size of the element (2em means2 times the size of 
+                    the current font)
+                - ex: Relative to the x-height of the current font (rarelyused) 
+                - ch: Relative to width of the"0" 
+                - rem: Relative to font-size of the root element
+                - vw: Relative to 1% of the width of the viewport
+                - vh: Relative to 1% of the height of the viewport
+                - vmin: Relative to 1% of viewport's* smaller dimension
+                - vmax: Relative to 1% of viewport's* larger dimension
+                - % Relativo ao pai 
+
+                Exemplos na div2
+*/
