@@ -1,0 +1,66 @@
+h1{
+    color: blue;
+    font-size: 12px;
+}
+
+#meu-titulo{
+    font-size: 50px;
+}
+
+.meu-titulo-personalizado{
+    color: red;
+}
+
+.titulo-verde{
+    color: green;
+}
+
+div p{
+    color: greenyellow;
+}
+
+.div-estilizada > .para-estilizado{
+    color: pink;
+}
+
+/* 
+    Sintaxe
+        - Uma folha de estilo CSS consiste em conjunto de regras:
+            - Seletores apontam para elementos HTML
+                Ex: h1
+            - Cada declaração corresponde a uma propriedade CSS
+                EX: color:blue e font-size: 12px
+ */
+
+ /* 
+    Seletores CSS
+        Seletor elemento
+            - Seleciona pelo nome do elemento (todos)
+                Ex: Linhas 1 a 4.
+
+        Seletor por id
+            - Seleciona pelo atributo id dos elementos
+                Ex: Linhas 6 a 8.
+
+        Seletor por classe
+            - Seleciona todos elementos de uma determinada classe
+                Ex: Linhas 10 a 12.
+
+        Agrupamento de seletores
+            - Pode-se agrupar elementos que tem mesmas definições de estilo
+                Ex: 
+                    h1, h2, p{
+                        text-align: center;
+                        color: red;
+                    }
+        
+        Seletores de elementos internos
+            - Seleciona elemento que estão dentro de outros elementos
+                Exemplo: Selecionar todo elementos <p> que estão dentro de elementos <div>
+                Ex: Linhas 18 a 20.
+        
+        Seletores de elementos imediatamente interno
+            - Seleciona elemento que são filhos imediatos
+                Exemplo: Selecionar todo elementos <p> que são filhos imediato de elementos <div>
+                Ex: Linhas 22 a 24.
+ */
