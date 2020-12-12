@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.minha-div{
+    background-color: blueviolet;
+}
+
+/* 
+    Reset sa página
+        - o "*" seleciona todos os elementos, basta você zerar o que quiser, como no exemplo acima
+
+*/

@@ -1,0 +1,32 @@
+.botao{
+    display: block;
+
+    background-color: khaki;
+
+    padding: 30px;
+    width: 80px;
+
+    text-decoration: none;
+    color: black;
+}
+
+/* 
+    Display
+
+        - Especifica como o elemento é renderizado
+        - Valores
+            - none: Esconde elemento e não deixa espaço -> interessante para fazer
+                elementos aparecerem e desaparecem usando JS
+            - block: elemento quebra linha e ocupa largura completa
+            - inline: elemento não quebra linha e só ocupa o espaço necessário
+            - inline-block: funcionam como elemento inline tendo widthe height -usado para fazer
+                            caixas que se reorganizam quando o navegador é redimensionado
+
+    display:none vs visibility:hidden
+        - Ambos fazem o elemento desaparecer
+            - display:none
+                - elemento não ocupa mais lugar no layout
+                
+            visibility:hidden
+                - elemento ainda ocupa lugar no layout
+*/
