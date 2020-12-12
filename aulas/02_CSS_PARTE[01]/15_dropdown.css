@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.dropdown{
+    width: 120px;
+}
+
+.dropdown .dropdown-texto{ 
+    background-color: red;
+
+    width: 120px;
+
+    padding: 20px 0;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.dropdown .conteudo-dropdown{
+    display: none;
+    position: absolute;
+
+    background-color: khaki;
+
+    height: 150px;
+    width: 200px;
+}
+
+.dropdown:hover .conteudo-dropdown{
+    display: block;
+}

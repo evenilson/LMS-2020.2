@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navegador{
+    display: flex;
+
+    background-color: hotpink;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+}
+
+.navegador > .botao-navegador{
+    display: block;
+
+    text-decoration: none;
+
+    padding: 20px;
+}
+
+.navegador > .botão-navegador:hover{
+    background-color: rgb(236, 130, 183);
+}
+
+.container{
+    height: 2000px;
+    margin-top: 58px;
+    padding: 14px;
+}
