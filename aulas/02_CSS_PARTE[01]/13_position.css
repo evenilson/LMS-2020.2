@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ex1{
+    border: 3px solid black;
+
+    height: 400px;
+    width: 400px;
+
+    margin: 0 auto;
+}
+
+.tamanho-200-verde{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+}
+
+.tamanho-200-azul{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+}
+
+
+.div1{
+
+    /* Valor padrão do position */
+    position: static;
+
+}
+
+.div2{
+
+    /* Valor padrão do position */
+    position: static;
+
+}
+
+.div3{
+    position: relative;
+    bottom: 30px;
+    right: 20px;
+}
+
+.div5{
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+}
+
+.div7{
+    position: absolute;
+
+    top: 0;
+    right: 0;
+}
+
+/* 
+    Propriedade Position
+        - Propriedade position define o método de posicionamento do elemento
+        - Temos quatro valores:
+            - static
+            - relative
+            - fixed
+            - absolute
+
+        position: static;
+            - Valor padrão de positioné static
+            - Posiciona os elementos com o fluxo normal da página
+
+            Ex: .div2 linha 35
+
+        position: relative;
+            - O posicionamento é relativo a sua posição normal○
+                - Não perde o lugar
+            
+            - Propriedades top, right, bottom, andleftvão ajustar a posição relativo com
+              a posição normal
+
+              Ex: .div3 linha 42
+
+        position: fixed;
+            - O elemento é posicionado segundo a viewport
+            - Não deixa espaço onde ele estaria posicionado normalmente
+
+            Ex: .div5 linha 48
+
+        position: absolute;
+            - O elemento é posicionado de acordo com o ancestral mais
+              próximo que possui o position setado
+            - Se o elemento não tem ancestrais posicionados, ele usa o 
+              bodycomo base
+            - Quando não é setadoleft, right, bottomou top, o elemento fica no mesmo lugar
+            - Elemento perde o lugar dele
+
+            Ex: .div 7 linha 57
+
+*/
