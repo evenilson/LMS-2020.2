@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+} /* Resetando todas os elementos da pagina, deixando sem padding e margem */
+
+a {
+    display: block;
+    text-decoration: none;
+}  /* Resetando os links da página, deixando com display block e tirando a decoração do texto */
+
+/* Estilo para o body */
+body{
+    width: 100%; /* para ocupar todo espaço da tela horizontalmente */
+    height: 100vh; /*para ocupar todo espaço da tela verticalmente*/
+
+    background-color: #181919; /* definindo cor de fundo para a página*/
+
+    font-family: 'Share Tech', sans-serif; /* Definindo fonte da página toda*/
+}
+
+
+/* Estilo para do header, já coloquei a cor de fundo nele e não no nav como pediu na atividade*/
+.header{
+    background-color: #292a2c; 
+
+    height: 70px;
+}
+
+/* Estilo da logo*/
+.logo{
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    color: #daa520;
+    
+    height: 70px;
+}
+
+/* Estilo para o conteiner onde os botões vão ficar*/
+.nav-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo para a lista de botões*/
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+/* Estilo dos botões*/
+.nav-button{
+    padding: 25px;
+    
+    height: 70px;
+
+    color: #daa520;
+
+    transition: 0.8 ease-in;
+
+    border-top: thin solid transparent;
+    border-bottom: thin solid transparent;
+
+}
+
+/* estilo do hover dos botões*/
+.nav-button:hover{
+    background-color: #3a3d3f;
+
+    border-top: thin solid #daa520;
+    border-bottom: thin solid #daa520;
+}
+
+/* Estilo para definir display inline para o dropdown (<li> que abrage todo dropdown)*/
+.nav-dropdown{
+    display: inline;
+}
+
+/* Estilo para o botão do dropdown*/
+.nav-dropdown-button{
+    padding: 25px;
+    height: 70px;
+    width: 300px;
+    text-align: center;
+
+    color: #daa520;
+}
+
+/* Estilo para o conteuúdo do*/
+.nav-dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    
+    min-width: 230px;
+
+    background-color: #3a3d3f;
+    
+    border-top: thin solid #daa520;
+    border-bottom: thin solid #daa520;
+    
+}
+
+/* Estilo para os botões do conteúdo do dropdown*/
+.nav-dropdown-content a{
+    padding: 10px;
+    display: block;
+    text-align: left;
+    color: white;
+
+}
+
+/* Estilo para hover dos botões do conteúdo do dropdown*/
+.nav-dropdown-content a:hover{
+    background-color: #292a2c;
+}
+
+/* Estillo para fazer hover ao passar o mouse por cima do dropdown*/
+.nav-dropdown:hover .nav-dropdown-button{
+    background-color: #3a3d3f;
+}
+
+/* Estilo para hover do dropdown tranformar ele e o conteúdo e conteúdo do dropdown tranformando em bloco */
+.nav-dropdown:hover .nav-dropdown-content{
+    display: block;
+}
