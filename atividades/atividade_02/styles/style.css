@@ -188,3 +188,22 @@ body{
 
     margin-top: 10px;
 }
+
+/* Estilo para o footer*/
+.footer{
+    width: 100%;
+    height: 25px;
+
+    bottom: 0;
+ 
+    background-color: #292a2c;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    text-transform: uppercase;
+    color: #dda520;
+    font-size: 13px;
+    
+}
