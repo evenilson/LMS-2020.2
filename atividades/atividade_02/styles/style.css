@@ -207,3 +207,37 @@ body{
     font-size: 13px;
     
 }
+
+/* Estilos página 2*/
+
+/* Estilo para o nav fixo a esquerda*/
+.nav-left{
+    height: 100vh;
+    width: 400px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background-color: #3a3d3f;
+
+    text-align: center;
+
+}
+
+/* estilo para a lista nav da fixo a esquerda*/
+.nav-left-list{
+    flex-direction: column;
+}
+
+/* Estilo para os botões*/
+.nav-left-button{
+    width: 400px;
+
+    transition: 0.6 ease;
+}
+
+/* Estilo para o hover dos botões*/
+.nav-left-button:hover{
+    background-color: #292a2c;
+}
