@@ -246,3 +246,8 @@ body{
 .article-margin-left{
     margin-left: 500px;
 }
+
+/* Estilo para dar uma margem no h4 do footer para ficar centralizado com os artigos*/
+.footer-left h4{
+    margin-left: 400px;
+}
