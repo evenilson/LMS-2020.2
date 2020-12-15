@@ -136,3 +136,55 @@ body{
 .nav-dropdown:hover .nav-dropdown-content{
     display: block;
 }
+
+/* Estilo dos artigos*/
+.article{
+    max-width: 60%;
+    margin: 60px auto;
+
+    padding: 30px;
+
+    border: thin solid #daa520;
+    border-radius: 50px 0;
+
+    color: white;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* Estilo para os titulos do artigo*/
+.article h1{
+    font-size: 35px;
+    padding: 17px 0;
+}
+
+/* Estilo de sections*/
+.section{
+    text-align: justify;
+}
+
+/* Estilo para os links dentro das sections*/
+.section a{
+    margin-top: 10px;
+
+    color: #dda520;
+
+    text-decoration: underline;
+}
+
+/* EStilo para a lista dentro da section*/
+.section-list{
+    padding: 10px 20px 20px 20px;
+}
+
+/* Estilo para o strong */
+.section-list strong{
+    color: #daa520;
+}
+
+/* Estilo para as li*/
+.section-list li{
+    list-style: none;
+
+    margin-top: 10px;
+}
