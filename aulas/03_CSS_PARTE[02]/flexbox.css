@@ -7,6 +7,9 @@
     display: flex; /* definindo o display flex*/
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
 
     height: 1000px;
 
@@ -19,7 +22,17 @@
     background-color: cadetblue;
 }
 
+.item1{
+    height: 300px;
+}
 
+.item2{
+    height: 250px;
+}
+
+.item3{
+    height: 200px;
+}
 /*
 
 Flexbox
@@ -52,4 +65,27 @@ Flexbox
         .container { 
             flex - wrap : nowrap | wrap | wrap - reverse ; 
         }
+
+    - justify - content 
+        -  Alinha os elementos em relação ao eixo principal 
+        
+        .container {
+            justify - content : flex - start | flex - end | center | space - between | space - around | space - evenly ;
+        }
+
+    - align - items 
+        - Alinha elementos em relação ao eixo transversal 
+        
+        .container { 
+            align - items : flex - start | flex - end | center | baseline | stretch ;
+        }
+
+    - align - content
+        - Ajusta espaço entre linhas no eixo transversal 
+        - Só funciona quando temos mais de uma linha 
+        
+        .container { 
+            align - content : flex - start | flex - end | center | space - between | space - around | stretch ;
+        }
+    
 */
