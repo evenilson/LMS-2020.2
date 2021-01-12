@@ -24,14 +24,36 @@
 
 .item1{
     height: 300px;
+
+    order: 10;
 }
 
 .item2{
     height: 250px;
+
+    order: 2;
 }
 
 .item3{
     height: 200px;
+}
+
+
+.div1{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2{
+    width: 200px;
+    height: 200px;
+
+    background-color: brown;
 }
 /*
 
@@ -87,5 +109,13 @@ Flexbox
         .container { 
             align - content : flex - start | flex - end | center | space - between | space - around | stretch ;
         }
-    
+
+    - order
+        - Muda ordem dos elementos 
+        - Valor padrão é 0 
+        
+        .item { 
+            order : < integer >;  default is 0 
+        }
+
 */
