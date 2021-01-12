@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex; /* definindo o display flex*/
+
+    height: 500px;
+
+    border: 1px solid black;
+}
+
+.item{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+
+/*
+
+Flexbox
+
+    - Flexbox é o modo mais eficiente de posicionar, alinhar e distribuir espaço em um container
+    - Pode manipular tamanho dos elementos filhos
+    = Éagnóstico em oposição a layouts regulares
+        - Blocos se empilham verticalmente
+        - Inline se empilham horizontalmente
+
+
+    
+Display
+    - Para habilitar flex no container
+.container{
+    display: flex;
+}
+
+*/
