@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navegador{
+    background-color: crimson;
+
+    display: flex;
+}
+
+.navegador a, .container1 .menu1 a, .container2 .menu2 a{
+    display: block;
+
+    padding: 8px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.navegador a:hover, .container1 .menu1 a:hover, .container2 .menu2 a:hover{
+    background-color: rgba(30, 106, 168, 0.767);
+}
+
+.container1{
+    display: flex;
+}
+
+.container1 .menu1{
+    background-color: darkgray;
+    flex-grow: 1;
+}
+
+.container1 .conteudo1{
+    background-color: darkolivegreen;
+    flex-grow: 3;
+}
+
+.container2{
+    display: flex;
+}
+
+.container2 .menu2{
+    background-color: darkseagreen;
+    flex-basis: 400px;
+}
+
+.container2 .conteudo2{
+    background-color: darkslategrey;
+    flex-grow: 1;
+}
+
+
+/*
+            - flex - grow 
+                - Define proporção de crescimento de cada elemento 
+                - Valor padrão é 0 
+                
+                .item {
+                    flex - grow : < number >;  default 0 
+                }
+
+            - flex - basis 
+                - Define o tamanho padrão
+                    - antes do espaço que sobra ser distrubuído 
+                    
+                .item { 
+                    flex - basis : < length > | auto ; default auto
+                }
+
+*/
