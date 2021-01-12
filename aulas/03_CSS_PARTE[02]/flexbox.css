@@ -5,8 +5,10 @@
 
 .container {
     display: flex; /* definindo o display flex*/
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    height: 500px;
+    height: 1000px;
 
     border: 1px solid black;
 }
@@ -14,7 +16,7 @@
 .item{
     height: 200px;
     width: 200px;
-    background-color: blue;
+    background-color: cadetblue;
 }
 
 
@@ -30,10 +32,24 @@ Flexbox
 
 
     
-Display
-    - Para habilitar flex no container
-.container{
-    display: flex;
-}
+    - Display
+        - Para habilitar flex no container
+        .container{
+            display: flex;
+        }
 
+    - flex - direction - Eixo Principal
+        - Define eixo principal 
+        
+        .container { 
+            flex - direction : row | row - reverse | column | column - reverse ;
+        }
+
+    - flex - wrap
+        - Por padrão, o flex tenta colocar todo os elementos na mesma linha
+        - Mas é possível mudar esse comportamento
+        
+        .container { 
+            flex - wrap : nowrap | wrap | wrap - reverse ; 
+        }
 */
