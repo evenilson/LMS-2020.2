@@ -57,3 +57,90 @@ body{
     background: rgba(255, 255, 255, .7);
     color: black;
 }
+
+
+/* Estilo do conteiner*/
+.container{
+    display: flex;
+}
+
+/* Estilo para o navegador da esquerda*/
+.container .navigation-side{
+    flex-basis: 300px;
+    height: 100vh;
+
+    flex-shrink: 0;
+    
+
+    background-color: rgba(255, 255, 255, .08);
+}
+
+/* Estilo para a lista de itens do navegador da esquerda */
+.container .navigation-side ul{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para os itens da lista do navegador da esquerda */
+.container  .navigation-side ul li{
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Estilo para os links dos itens da lista do navegador da esquerda */
+.container .navigation-side ul li a{
+    padding: 25px 0;
+
+    width: 100%;
+
+    color: #fff;
+
+    transition: .3s ease-in;
+}
+
+/* Estilo :hover para os links dos itens da lista do navegador da esquerda */
+.container .navigation-side ul li a:hover{
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
+}
+
+/* Estilo para o conteúdo */
+.container .content {
+    flex-grow: 3;
+    
+    text-align: center;
+}
+
+/* Estilo para a galeria no conteudo*/
+.container .content .gallery{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-content: flex-start;
+}
+
+/* Estilgo para as imagens da galeria*/
+.container .content .gallery img{
+    height: 150px; 
+
+    flex-basis: 150px;
+
+    margin: 15px;
+    
+}
+
+/* Estilo para o navegador da direita*/
+.container .navigation-side-right{
+    height: 100vh;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    
+    background-color: rgba(255, 255, 255, .1);
+}
