@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Yusei Magic', sans-serif;
+
+    background-color: #6368c7;
+}
+
+/* Estilo do cabeçalho*/
+.header{
+    display: flex;
+    justify-content: space-between;
+
+    background-color:rgba(255, 255, 255, .2);
+
+    align-items: center;
+    
+    padding: 0 10px;
+}
+
+/* Estilo para o h1 do cabeçalho*/
+.header h1{
+    color: #fff;
+}
+
+/* Estilo para a lista de navegação*/
+.header .navigation ul{
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para os itens da lista de navegação*/
+.header .navigation ul li{
+    list-style: none;
+}
+
+/* Estilo para os links que estão nos itens dalista de navegação*/
+.header .navigation ul li a{
+    color: #fff;
+
+    padding: 12px 25px;
+
+    cursor: pointer;
+
+    transition: .3s ease-in;
+}
+
+/* Estilo de :hover para os links que estão nos itens dalista de navegação*/
+.header .navigation ul li a:hover{
+    background: rgba(255, 255, 255, .7);
+    color: black;
+}
