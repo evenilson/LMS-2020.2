@@ -144,3 +144,18 @@ body{
     
     background-color: rgba(255, 255, 255, .1);
 }
+
+/* Estilo para o footer*/
+.footer{
+    width: 100%;
+
+    position: relative;
+    bottom: 0;
+
+    background-color: rgba(255, 255, 255, .2);
+
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #fff;
+}
