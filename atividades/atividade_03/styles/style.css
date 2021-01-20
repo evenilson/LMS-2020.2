@@ -126,9 +126,8 @@ body{
 
 /* Estilgo para as imagens da galeria*/
 .container .content .gallery img{
-    height: 150px; 
-
-    flex-basis: 150px;
+    height: 150px;
+    width: 150px;
 
     margin: 15px;
     
