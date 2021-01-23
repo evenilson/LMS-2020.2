@@ -1,0 +1,75 @@
+body{
+    display: flex;
+}
+
+.minha-div{
+    border:  1px solid black;
+}
+
+.outra-div{
+    width: 200px;
+    height: 200px;
+
+    background-color: blue;
+
+    transform: translate(50px, 100px) rotate(20deg) scale(1.5, 1.5) skew(10deg, 30deg);
+}
+
+/*
+
+Transformações 2D
+
+    - Método translate() - move elemento em relação à sua posição original 
+        
+        div {
+            -ms-transform: translate(50px, 100px); no IE 9
+            -webkit-transform: translate(50px, 100px); no Safari
+            transform: translate(50px, 100px); 
+        }
+
+    - Método rotate() - rotaciona elemento segundo um dado angulo 
+    
+        div { 
+            -ms-transform: rotate(20deg); no IE 9 
+            -webkit-transform: rotate(20deg); no Safari 
+            transform: rotate(20deg); 
+        }
+
+    - Método scale() - aumenta ou diminui o elemento em relação ao seu tamanho original
+        
+        div { 
+            -ms-transform: scale(2, 3) ; no IE 9 
+            -webkit-transform: scale(2, 3); no Safari 
+            transform: scale(2, 3);
+
+    - Métodos skewX() e skewY() para inclinar elemento no eixo X ou Y 
+    
+        div {
+            -ms-transform: skewY(20deg); no IE 9  
+            -webkit-transform: skewY(20deg); no Safari 
+            transform: skewY(20deg); 
+        } 
+        
+        Ou os dois juntos (eixo X e Y) 
+        
+        div { 
+            -ms-transform: skew(20deg, 10deg); no IE 
+            -webkit-transform: skew(20deg, 10deg); no Safari 
+            transform: skew(20deg, 10deg);
+
+    - Método matrix() agrupa todos os métodos
+        - matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()): 
+        
+            div { 
+                -ms-transform: matrix(1, - 0.3, 0, 1, 0, 0) ; no IE 9 
+                -webkit-transform: matrix(1, - 0.3, 0, 1, 0, 0); no Safari
+                transform: matrix(1, - 0.3, 0, 1, 0, 0);
+            }
+    
+    - Métodos rotateX() , rotateY() e rotateZ() para rotacionar elementos nos eixos X, Y e Z 
+    
+        div { 
+            -webkit-transform: rotateX(150deg); no Safari 
+            - transform: rotateX(150deg); 
+        }
+*/
