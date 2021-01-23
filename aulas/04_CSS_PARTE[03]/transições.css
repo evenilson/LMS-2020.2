@@ -1,0 +1,59 @@
+.transicao {
+    width: 200px;
+    height: 200px;
+
+    background-color: blue;
+
+    /*
+    transition: width 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    */
+
+    /*mesma coisa do codigo acima*/
+    transition: width 2s linear 1s;
+}
+
+.transicao:hover {
+    width: 600px;
+}
+
+
+/*
+    Transições 
+    
+        - Transições CSS permitem mudar valores de propriedade suavemente em um tempo determinado 
+        - Deve ser especificado, pelo menos, duas coisas:
+            - A propriedade CSS na qual o efeito será adicionado
+            - A duração do efeito 
+            
+            div { 
+                width: 100px; 
+                height: 100px; 
+                background: red;
+                transition: width 2s; 
+            } 
+            
+            div:hover { 
+                width: 300px; 
+            } 
+            
+            Ou, para várias propriedades
+            
+            div {
+                -webkit-transition: width 2s, height 4s ; no Safari 
+                transition: width 2s, height 4s;
+
+        - Propriedade transition-timing-function 
+            - Define curva de velocidade do efeito de transição
+            - Valores: 
+                - ease: começo lento, meio rápido e final lento 
+                - linear: mesma velocidade do começo ao fim 
+                - ease-in: começo lento
+                - ease-out: fim lento
+                - ease-in-out: começo e fim lento
+                - cubic - bezier(n,n,n,n): você pode definir os valore para a função cúbica de bezier 
+            
+        - Propriedade transition-delay 
+            - Define tempo para começar o efeito de transição
+*/
