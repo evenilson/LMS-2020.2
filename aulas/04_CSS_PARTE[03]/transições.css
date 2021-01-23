@@ -56,4 +56,20 @@
             
         - Propriedade transition-delay 
             - Define tempo para começar o efeito de transição
+
+
+        Propriedade transition
+            - Propriedade atalho 
+            - 4 valores: 
+                - Propriedade 
+                - Tempo de duração 
+                - Curva da velocidade do efeito 
+                - Tempo de delay 
+                
+                div {
+                    transition: width 2s linear 1s; 
+                } 
+                
+                
+            Obs: se não definir tempo de duração, o padrão é 0s
 */
