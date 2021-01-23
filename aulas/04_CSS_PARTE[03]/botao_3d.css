@@ -1,0 +1,20 @@
+.botao-3d {
+    background-color: blueviolet;
+    
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    padding: 15px; 
+
+    cursor: pointer;
+
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .4);
+
+    transition: transform 500ms, box-shadow 500ms;
+}
+
+.botao-3d:active {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, .8);
+    transform: translate(2px, 2px);
+}
