@@ -1,0 +1,58 @@
+.sombra-texto {
+    text-shadow: 10px 2px 3px rgba(0, 200, 0, .4);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    border-radius: 20px;
+}
+
+.galeria .card {
+    background-color: cadetblue;
+
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .4);
+}
+
+.galeria .card .image-card {
+    width: 200px;
+}
+
+/*
+
+Sombra
+    
+    Propriedade text-shadow
+        - Quatros valores: 
+            - tamanho horizontal
+            - tamanho vertical
+            - tamanho do blur (opcional) 
+            - cor (opcional) 
+            
+            h1 {
+                color: white; 
+                text-shadow: 2px 2px 4px #000000; 
+            } 
+            
+        Ou múltiplos shadows 
+            h1 {
+                text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+            }
+
+    Propriedade box-shadow
+        - Adiciona sombra em elementos
+        - Mesmos quatro valores de text-shadow 
+        
+        div {
+            color: white;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        {
+
+*/
