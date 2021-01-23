@@ -1,0 +1,50 @@
+.arredondada {
+    background-color: blue;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 20px 40px 60px 80px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    border-radius: 20px;
+}
+
+.galeria .card {
+    background-color: cadetblue;
+
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 20px;
+}
+
+.galeria .card .image-card {
+    width: 200px;
+}
+
+/*
+
+Bordas Arredondadas
+
+    - Propriedade border - radius
+        - É possível colocar de 1 a 4 valores:
+            - Um valor: todos os cantos são arredondados igualmente
+            - Dois valores: primeiro valor é aplicado no top - left e no bottom - right. O segundo
+              valor é aplicado ao top - right e ao bottom - left
+            - Três valores: o primeiro valor é aplicado ao top - left, o segundo é aplicado ao top - right
+              e o bottom - left e o terceiro é aplicado ao bottom - right
+            - Quatro valores: o primeiro é aplicado ao top - left, o segundo é aplicado ao top - right, o terceiro é aplicado ao bottom - right e o quarto é aplicado o bottom - left 
+            
+            border-radius: 25px; 
+            
+            
+        - border - radius é atalho para border - top - left - radius , border - top - right - radius ,
+         border - bottom - right - radius e border - bottom - left - radius
+
+*/
