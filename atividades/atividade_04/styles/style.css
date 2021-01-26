@@ -144,3 +144,144 @@ body {
 .container .navigation-side .button-box .button:hover {
     background-color: rgba(16, 79, 90, 0.2);
 }
+
+
+/*ESTILOS PARA O CONTEÚDO*/
+
+/* Estilo do conteúdo*/
+.container .content {
+    flex-grow: 1;
+}
+
+/* Estilo para as linhas do conteúdo*/
+.container .content .row {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+
+}
+
+/* Estilo para as celulas das linhas*/
+.container .content .row .celula {
+    flex-shrink: 0;
+
+    flex-basis: 100%;
+
+}
+
+/* Estilo exclusivo para a primeira celula do primeira linha*/
+#cel11 {
+    background-color: rgba(240, 97, 72, .25);
+
+    flex-basis: 50%;
+}
+
+/* Estilo exclusivo para a segunda celula do primeira linha*/
+#cel12 {
+    background-color: rgba(107, 224, 96, 0.25);
+
+    overflow: hidden;
+
+    flex-basis: 50%;
+}
+
+/* Estilo exclusivo para a primeira celula do segunda linha*/
+#cel21 {
+    background-color:  rgba(233, 19, 19, 0.25);
+
+    flex-basis: 33.3%;
+}
+
+/* Estilo exclusivo para a segunda celula do segunda linha*/
+#cel22 {
+    background-color: rgba(236, 233, 42, 0.25);
+
+    flex-basis: 33.3%;
+}
+
+/* Estilo exclusivo para a terceira celula do segunda linha*/
+#cel23 {
+    background-color: rgba(17, 22, 22, 0.25);
+
+    flex-basis: 33.3%;
+}
+
+/*ESTILOS PARA O ACCORDION */
+
+/* Estilo geral para o accordion */
+.container .content .row .celula#cel11 .accordion {
+    width: 100%;
+    background-color: rgba(240, 97, 72, .5);
+
+}
+
+/* Estilog para os tititlos dos itens do accordion*/
+.container .content .row .celula#cel11 .accordion .title {
+    height: 40px;
+
+    border-bottom: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilog para os corpos dos itens do accordion*/
+.container .content .row .celula#cel11 .accordion .body {
+    height: 0px;
+
+    background-color: rgba(240, 97, 72, .4);
+
+    overflow: hidden;
+
+    transition: height .3s ease-in;
+}
+
+/* Estilos para os parágrafos dentro do corpo do accordion*/
+.container .content .row .celula#cel11 .accordion .body p {
+    text-align: center;
+
+    padding: 10px;
+}
+
+/* Estilos para fazer aparecer o corpo aparecer ao passar o mouse sobre o título*/
+.container .content .row .celula#cel11 .accordion .title:hover ~ .body {
+    height: 240px;
+}
+
+/* ESTILOS PARA A IMAGEM DA CÉLULA 2*/
+
+/* Estilo geral do card*/
+.container .content .row .celula#cel12 .card {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para a imagem do card*/
+.container .content .row .celula#cel12 .card img {
+    width: 400px;
+}
+
+/* Estilo para a legenda do card*/
+.container .content .row .celula#cel12 .subtitle {
+    position: absolute;
+    bottom: 0;
+
+    height: 60px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(22, 21, 21, 0.8);
+
+    color: #fff;
+    text-transform: uppercase;
+}
