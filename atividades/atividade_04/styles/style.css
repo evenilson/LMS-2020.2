@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+    position: relative;
+}
+
+/* Estilo geral do cabeçalho*/
+.header {
+    background-color: black;
+    
+    text-align: center;
+
+}
+
+/*ESTILOS CABEÇALHO*/
+
+/* Estilho para os links dentro do cabeçalho*/
+.header a {
+    text-decoration: none;
+    color: #fff;
+
+    opacity: .7;
+
+    transition: opacity .4s ease;
+}
+
+/* Estilho de hover para os links dentro do cabeçalho*/
+.header a:hover {
+    opacity: 1;
+}
+
+/*ESTILOS NAVEGADOR DO TOPO*/
+
+/* Estilo do navegador do topo*/
+.navigation-top {
+    height: 40px;
+
+    background-color: rgba(16, 79, 90, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+/* Estilgo para a caixa de botões*/
+.navigation-top .button-box {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+}
+
+/* Estilgo dos itens da lista da caixa de botões*/
+.navigation-top .button-box li{
+    list-style: none;
+}
+
+/* Estilo dos botões do navegador */
+.navigation-top .button-box .button {
+    text-decoration: none;
+    color: #fff;
+
+    padding: 10.5px 60px;
+
+}
+
+/* Estilo hover para os botões do navegador */
+.navigation-top .button-box .button:hover {
+    background-color: rgba(16, 79, 90, 0.4);
+}
