@@ -285,3 +285,47 @@ body {
     color: #fff;
     text-transform: uppercase;
 }
+
+
+/* ESTILO PARA DISPOSITIVOS MENORES QUE 768px*/
+@media screen and (max-width: 768px) {
+
+    /* Estilo para modificar a navegação do topo*/
+    .navigation-top {
+        box-shadow: none;
+    }
+
+    /* Estilo para modificar os botões do menu do topo*/
+    .navigation-top .button-box .button {
+        padding: 10.5px 20px;
+    }
+
+    /* Estilo para modificar o container*/
+    .container {
+        flex-direction: column; 
+    }
+
+    /* Estilo para modificar o navegador lateral*/
+    .container .navigation-side {
+        height: 400px;
+
+        box-shadow: none;
+    }
+
+    /* Estilo para modificar as linhas*/
+    .container .content .row {
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+        
+    }
+
+    /* Estilo para modificar as celulas*/
+    #cel11, #cel12, #cel21, #cel22, #cel23 {
+        flex-basis: initial;
+
+        width: 100%;
+        height: 400px;
+    }
+}
