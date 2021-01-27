@@ -1,3 +1,3 @@
 ## Atividade_04
 
-A atividade consistia em fazer um site com menu superior e menu lateral, com o conteúdo com duas linhas, a primeira linha tem 2 celulas, uma com um Accordion e outra com uma imagem com, já a segunda linha são 3 células sem conteúdo e apenas com cores diferentes.
+A atividade consistia em fazer um site com menu superior e menu lateral, com o conteúdo com duas linhas, a primeira linha tem 2 celulas, uma com um Accordion e outra com uma imagem com, já a segunda linha são 3 células sem conteúdo e apenas com cores diferentes. O site também teria que ter layout para telas menores que 768px e um keyframe qualquer, fiz uma bola que "desfila" sobre a tela.
