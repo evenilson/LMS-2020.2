@@ -329,3 +329,52 @@ body {
         height: 400px;
     }
 }
+
+/* ESTILO PARA O KEYFRAME*/
+
+/* Estilo para o container da bola*/
+.ball {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+
+    animation: moveball 8s infinite;
+}
+
+/* Estilo da imagem da bola*/
+.ball img {
+    width: 50px;
+}
+
+/* Fazendo o Keyframe*/
+@keyframes moveball {
+    0% { 
+        left: 5%;
+        top: 10%;
+        transform: rotate(0deg);
+    }
+
+    25% { 
+       left: 85%;
+       top: 10%;
+       transform: rotate(360deg);
+    }
+
+    50% { 
+        left: 5%;
+        top: 80%;
+        transform: rotate(0deg);
+    }
+
+    75% { 
+        left: 85%;
+        top: 80%;
+        transform: rotate(360deg);
+    }
+
+    100% { 
+        left: 5%;
+        top: 10%;
+        transform: rotate(0deg);
+    }
+}
