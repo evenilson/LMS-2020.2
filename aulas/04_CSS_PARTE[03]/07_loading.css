@@ -1,0 +1,23 @@
+.loading {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+    border-width: 40px;
+    border-style: solid;
+    border-color: rgba(0, 128, 0, 0.089) rgb(220, 220, 220) rgb(220, 220, 220);
+
+    animation-name: rodar;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rodar {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
