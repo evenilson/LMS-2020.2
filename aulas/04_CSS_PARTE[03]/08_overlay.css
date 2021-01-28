@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay img {
+    width: 400px;
+}
+
+.overlay .overlay-inner {
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: opacity 500ms;
+}
+
+.overlay .overlay-inner:hover {
+    opacity: 1;
+}
+
+.overlay .overlay-inner .overlay-text {
+    display: block;
+}
