@@ -1,0 +1,103 @@
+.animacao {
+    width: 200px;
+    height: 200px;
+
+    background-color: green;
+
+    animation-name: animacao-legal;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mudar-background {
+    from {
+        background-color: blue;
+        width: 200px;
+    }
+    to {
+        background-color: green;
+
+    }
+}
+
+@keyframes animacao-legal {
+    0% {
+        background-color: blue;
+    }
+    30% {
+        background-color: pink;
+    }
+    60% {
+        background-color: red;
+    }
+    80% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+
+
+
+/*
+
+    Animação
+        
+        - Animações CCS permitem trocar um estilo para outro de forma gradual 
+        - Deve-se especificar quais são os keyframes da animação 
+        - Regra @keyframes para definir estilos dos keyframes  
+        
+            div { 
+                width:100px; 
+                height:100px; 
+                background-color: red;
+                animation-name: example;
+                animation-duration: 4s; 
+            } 
+            
+            
+            @keyframes example {
+                from {
+                    background-color: red;
+                } 
+                to {
+                    background-color: yellow;
+                } 
+            } 
+            
+            Obs: se animation - duration não for especificado, o valor padrão 0s será usado
+
+
+        - Também é possível usar a porcentagem de conclusão para definir os keyframes 
+        
+            div { 
+                width: 100px;
+                height: 100px; 
+                position: relative; 
+                background-color: red;
+                animation-name: example; 
+                animation-duration: 4s; 
+            } 
+            
+            @keyframes example { 
+                0% { background - color : red ; left : 0px ; top : 0px ;} 
+                25% { background - color : yellow ; left : 200px ; top : 0px ;} 
+                50% { background - color : blue ; left : 200px ; top : 200px ;} 
+                75% { background - color : green ; left : 0px ; top : 200px ;} 
+                100% { background - color : red ; left : 0px ; top : 0px ;}
+            }
+
+        - Propriedade animation - iteration - count
+            - Define quantas vezes a animação vai rodar 
+                - Pode ser infinito
+
+                div {
+                    .
+                    .
+                    .
+                    animamation-iteration-count: 3;
+                }
+
+*/
