@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.superior {
+    height: 40px;
+
+    background-color: aqua;
+}
+
+.container {
+    display: flex;
+}
+
+.esquerda {
+    height: 400px;
+
+    background-color: red;
+
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
+
+.conteudo {
+    height: 400px;
+
+    background-color: green;
+
+    overflow: hidden;
+
+    flex-basis: calc((2*(100vw - 300px))/2);
+}
+
+.direita {
+    height: 400px;
+
+    background-color: brown;
+
+    flex-basis: calc((100vw - 300px)/2);
+}
+
