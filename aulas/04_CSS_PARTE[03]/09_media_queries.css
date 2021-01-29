@@ -1,0 +1,49 @@
+.colorida {
+    width: 400px;
+    height: 400px;
+
+    background-color: blue;
+}
+
+@media screen and (min-width) {
+    .colorida {
+        background-color: green;
+    }
+}
+
+
+/*
+
+    Media Queries
+        - A regra @media permite mudar o estilo de acordo com as características do equipamento que está renderizando a página
+        - Media queries conseguem checar várias atributos como: 
+            - ○ altura e largura do viewport  
+            - orientação do tablet/telefone (landscape ou portrait) 
+            - resolução 
+            
+        - Sintaxe: 
+            @media not|only mediatype and (expressions) { 
+                CSS - Code; 
+            } 
+            
+        - Exemplo: 
+            @media screen and (min - width : 480px) {
+                body { 
+                    background-color: lightgreen; 
+                }
+        
+        - Tipos de media:
+            - all: todos
+            - print: impressora 
+            - screen: telas de computador, tablets, celulares, etc
+            - speech: screenreaders
+        
+        - Características da media: 
+            - max-height
+            - min-height
+            - max-width
+            - min-width
+            - min-resolution
+            - max-resolution
+
+*/
