@@ -6,9 +6,8 @@ JavaScript é uma linguagem de programação interpretada estruturada, de script
 
 ### Sobre os arquivos
 
-*CSS
-** Cada aquivo .html tem um arquivo .css com a mesma enumeração.
-** Os comentários dos conteúdos estão em sua maioria nos aquivos CSS.
-
-JAVASCRIPT
-** Estão no arquivo .html
+* CSS
+    * Cada aquivo .html tem um arquivo .css com a mesma enumeração.
+    * Os comentários dos conteúdos estão em sua maioria nos aquivos CSS.
+* JAVASCRIPT
+    * Estão no arquivo .html
