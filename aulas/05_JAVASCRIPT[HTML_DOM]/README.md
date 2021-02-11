@@ -11,4 +11,4 @@ JavaScript é uma linguagem de programação interpretada estruturada, de script
 ** Os comentários dos conteúdos estão em sua maioria nos aquivos CSS.
 
 JAVASCRIPT
-* Estão no arquivo .html
+** Estão no arquivo .html
