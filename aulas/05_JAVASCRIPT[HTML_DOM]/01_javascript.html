@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="demo">
+
+    </div>
+    
+
+    <script>
+        document.getElementById("demo").innerHTML = "My First JavaScript"
+    </script>
+
+    <!--
+        Tag <script> 
+            - Código JavaScript deve ser colocado dentro de um elemento script 
+            - Pode ser colocado no < head > ou no < body > 
+            - É preferível colocar os scripts no final da página, pois carregamento e compilação podem atrasar a
+              renderização da página 
+              
+                <script> 
+                    document.getElementById("demo").innerHTML = "My First JavaScript"; 
+                </script>
+            
+            - Também é possível importar um .js externo 
+                <script src ="myScript.js"></script> 
+            Vantagens: 
+                Separa código JS e HTML 
+                Facilita manutenção 
+                Navegador pode deixar .js em cache
+    -->
+</body>
+</html>
