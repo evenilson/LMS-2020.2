@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fundo-azul {
+            background-color: blue;
+        }
+        .fonte-grande {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <span class="meu-span">
+        Algum texto
+    </span>
+
+
+    <script>
+        let span = document.querySelector(".meu-span");
+        span.classList.add("fundo-azul","fonte-grande");
+        span.classList.remove("fundo-azul");
+        span.classList.toggle("fundo-azul");
+        span.classList.toggle("fundo-azul");
+
+        /*
+            Manipulando Classes 
+                - API classList
+
+                - Adicionando classe 
+                    el.classList.add('classOne', 'classTwo');
+
+                - Removendo classe 
+                    el.classList.remove('classOne'); 
+
+                - Verificar existência de classe 
+                    if(el.classList.contains('classFour') == true){...}
+                
+                - Alternar classe 
+                    el.classList.toggle('classThree')
+        */
+        
+    </script>
+</body>
+</html>
