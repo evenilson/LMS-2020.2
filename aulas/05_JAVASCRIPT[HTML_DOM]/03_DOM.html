@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div-principal"></div>
+    <div class="div-doida">
+        <div class="doida-fi">dentro</div>
+    </div>
+    <div class="div-doida"></div>
+    <div class="doida-fi">fora</div>
+
+    <script>
+        let div_p = document.getElementById("div-principal");
+        console.log(div_p)
+
+        let divs = document.getElementsByTagName("div");
+        console.log(divs)
+
+
+        let div_doidas = document.getElementsByClassName("div-doida");
+        console.log(div_doidas);
+
+
+        let div_doids2 = document.querySelectorAll(".div-doida");
+        console.log(div_doids2);
+
+        let doida_dentro = document.querySelector(".div-doida .doida-fi");
+        console.log(doida_dentro);
+
+       /*
+            Elementos DOM 
+                - Recuperar elemento por id
+                    - Método getElementById() 
+                    - Se elemento não existir, myElement será nulo 
+                    
+                    let myElement = document.getElementById("intro");
+                
+                - Recuperar elementos por nome da tag 
+                    - Método getElementsByTagName() 
+
+                    let x = document.getElementById("main"); 
+                    let y = x.getElementsByTagName("p");
+                    
+                    // Recupera elemento com id=”main” e, depois, recupera todos elementos <p> dentro dele
+
+                - Recuperar elementos por classe 
+                    - Método getElementsByClassName() 
+                    
+                    let x = document.getElementsByClassName("intro");
+                    
+                - Recuperar elemento por seletor CSS 
+                    - Método querySelectorAll() 
+                    
+                    let x = document.querySelectorAll("p.intro");
+
+       */
+    </script>
+</body>
+</html>
