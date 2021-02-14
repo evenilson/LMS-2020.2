@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo">
+        Titulo da minha página
+    </h1>
+
+    <img src="https://loremflickr.com/500/500/dog" alt="" class="foto"> 
+
+
+    <script>
+        let titulo = document.querySelector(".titulo");
+        titulo.innerHTML = "<span>meu titulo foi mudado via js<span>";
+
+        let foto = document.querySelector(".foto");
+        foto.src = "https://loremflickr.com/500/500/cat"
+
+        /*
+        Manipulando HTML
+            - Propriedade innerHTML
+                - Muda conteúdo HTML de um elemento HTML 
+                
+                document.getElementById("p1").innerHTML="New text!";
+            
+            - Manipulando atributos HTML
+                - document.getElementById(id).attribute=new value 
+            
+                document.getElementById("myImage").src="landscape.jpg"
+        
+        */
+    </script>
+</body>
+</html>
