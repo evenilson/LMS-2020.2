@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Printar na tela
+        console.log("Hello World");
+
+        //Declaração de variáveis
+        let x = 2;
+        console.log(x);
+        let s = "Evenilson";
+        console.log(s);
+
+
+        //if
+        if(x == 2) {
+            console.log("É verdade!");
+        }
+        else {
+            console.log("É mentira")
+        }
+
+        if(s == "Even") {
+            console.log("É verdade!");
+        }
+        else {
+            console.log("É mentira")
+        }
+
+        //Lista
+        let l = [1, 5, 10];
+        console.log(l[0]);
+        console.log(l[1]);
+        console.log(l[2]);
+
+        l.push(20);
+        console.log(l[3]);
+
+        console.log(l);
+
+        //for
+        for(let i=0; i<10; i++) {
+            console.log(i);
+        }
+
+        for(let i=0; i<l.length; i++) {
+            console.log(l[i]);
+        }
+
+        //objetos
+        let pessoa = {
+            nome:"Evenilson",
+            sobrenome: "Liandro",
+            siape: "123546"
+        }
+
+        console.log(pessoa.nome);
+        console.log(pessoa.sobrenome);
+        console.log(pessoa.siape);
+        console.log(pessoa);
+
+        //Funções
+        function add(a, b) {
+            return a+b;
+        }
+        console.log(add(x, 10));
+
+        let subracão = function(a,b){return a-b};
+
+        console.log(subracão(10,5));
+
+        let mult = (a,b) => {return a*b};
+        console.log(mult(3, 5));
+
+        let dividir = (a,b) => (a/b);
+        console.log(dividir(10,5));
+
+    </script>
+</body>
+</html>
