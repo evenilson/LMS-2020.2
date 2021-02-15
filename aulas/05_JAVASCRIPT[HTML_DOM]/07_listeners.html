@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .fundo-azul{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button class="meu-botao">Me clique</button>
+
+    <script>
+        let botao = document.querySelector(".meu-botao");
+        botao.addEventListener("click", function(){
+            botao.classList.toggle("fundo-azul");
+        })
+
+        /*
+            Eventos HTML
+            
+                - Código JS pode ser disparado a partir de eventos
+                    - Quando um usuário clica o mouse
+                    - Quando a página é carregada 
+                    - Quando uma imagem é carregada
+                    - Quando um mouse passa sobre um elemento 
+                    - Quando um campo de entrada muda 
+                    - Quando um formulário HTML é submetido 
+                    - Quando o usuário aperta uma teclas
+
+                - onclick - no clique 
+                    - HTML - <button onclick ="displayDate()"> Try it < /button> 
+                    - JS - document.getElementById( "myBtn" ).onclick = displayDate;
+                    
+                - onload - no carregamento
+                    - <body onload ="checkCookies()">
+                
+                - nchange - mudança de estado (muito usado em fomulários)
+                    - <input type ="text" id ="fname" onchange ="upperCase()"> 
+                    
+                - onmouseover - quando o mouse se desloca sobre o elemento 
+                - onmouseout - quando o mouse se desloca para fora do elemento 
+                - onmousedown - quando o botão do mouse é pressionado 
+                - onmouseup - quando o botão do mouse é solto 
+                - onclick - quando a ação de clicar em um elemento
+            
+            HTML DOM EventListener
+                
+                - É possível adicionar listeners de eventos 
+                    - element .addEventListener(event, useCapture ); 
+                        
+                    ex: element .addEventListener( "click" , function (){ alert( "Hello World!" ); }); 
+                    
+                    -Nota: Não usar prefixo “on”, use “click” no lugar de “onclick”
+                    
+                - Também é possível remover listeners
+                    - element .removeEventListener( "mousemove" , myFunction) 
+        */
+    </script>
+</body>
+</html>
