@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navegador {
+            border-color: #f8f9fa;
+        }
+
+        .navegador .cabecalho-navegador {
+            display: flex;
+            align-items: center;
+
+            padding: 10px;
+        }
+
+        .navegador .cabecalho-navegador button {
+            margin-left: auto;
+
+            padding: 9px 20px;
+
+            outline: none;
+
+            border: 3px solid rgba(0,0,0,.1);
+
+            border-radius: 4px;
+        }
+
+        .navegador .menu-retratil a {
+            display: block;
+            
+            text-decoration: none;
+
+            color: black;
+
+            padding: 10px;
+        }
+
+        .navegador .menu-retratil a:hover {
+            background-color: #f8f9fa;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navegador">
+        <div class="cabecalho-navegador">
+            <h3>Título</h3>
+            <button> &#9776;</button>   
+        </div>
+        <div class="menu-retratil">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+        </div>
+    </nav>
+</body>
+</html>
