@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navegador {
+            border-color: #f8f9fa;
+        }
+
+        .navegador .cabecalho-navegador {
+            display: flex;
+            align-items: center;
+
+            padding: 10px;
+        }
+
+        .navegador .cabecalho-navegador button {
+            margin-left: auto;
+
+            padding: 9px 20px;
+
+            outline: none;
+
+            border: 3px solid rgba(0,0,0,.1);
+
+            border-radius: 4px;
+        }
+
+        .navegador .menu-retratil {
+            height: 0;
+
+            overflow: hidden;
+
+            transition: height .6s;
+
+            position: absolute;
+
+            width: 100%;
+
+        }
+
+        .navegador .menu-retratil a {
+            display: block;
+            
+            text-decoration: none;
+
+            color: black;
+
+            padding: 20px;
+
+            background-color: #f8f9fa;
+        }
+
+        .navegador .menu-retratil.active {
+            height: 232px;
+        }
+
+        .navegador .menu-retratil a:hover {
+            background-color: #f8f9fa;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navegador">
+        <div class="cabecalho-navegador">
+            <h3>Título</h3>
+            <button> &#9776;</button>   
+        </div>
+        <div class="menu-retratil">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+        </div>
+    </nav>
+    <img src="https://loremflickr.com/1000/1000/dog" alt="">
+
+    <script>
+        let button = document.querySelector(".navegador .cabecalho-navegador button");
+
+        let menu_retratil = document.querySelector(".navegador .menu-retratil");
+
+        button.addEventListener("click", function(){
+            menu_retratil.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
