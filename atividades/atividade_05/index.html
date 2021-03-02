@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./style.css">
+    <title>BookFace</title>
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo">BookFace</a>
+        <nav class="nav-top">
+            <a href="" class="open-post">postar</a>
+            <div class="hamburguer-bt">
+                <div class="hambuguer-bt__stripe hambuguer-bt__stripe__top"></div>
+                <div class="hambuguer-bt__stripe hambuguer-bt__stripe__middle"></div>
+                <div class="hambuguer-bt__stripe hambuguer-bt__stripe__bottom"></div>
+            </div>
+        </nav>
+    </header>
+    <nav class="nav-side">
+        <a href=""><i class="material-icons">account_circle</i>Evenilson Liandro</a>
+        <a href=""><i class="material-icons">people</i>Amigos</a>
+        <a href=""><i class="material-icons">groups</i>Grupos</a>
+        <a href=""><i class="material-icons">storefront</i>Marketplace</a>
+        <a href=""><i class="material-icons">event_available</i>Eventos</a>
+        <a href=""><i class="material-icons">snooze</i>Lembranças</a>
+    </nav>
+    <div class="feed">
+        <div class="post highlighted">
+            <div class="user-info">
+                <i class="material-icons">account_circle</i>
+                <span class="username"></span>
+            </div>
+            <p class="message"></p>
+        </div>
+        <div class="post">
+            <div class="user-info">
+                <i class="material-icons">account_circle</i>
+                <span class="username">Victor</span>
+            </div>
+            <p class="message">tudo bem?</p>
+        </div>
+        <div class="post">
+            <div class="user-info">
+                <i class="material-icons">account_circle</i>
+                <span class="username">Carlos</span>
+            </div>
+            <p class="message">Tá quente hoje!</p>
+        </div>
+    </div>
+    <div class="overlay-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Adicionar post</h3>
+                <button class="close-modal"><i class="material-icons">close</i></button>
+            </div>
+            <form action="" class="form">
+                <input class="username-form" type="text" placeholder="Digite seu nome">
+                <textarea class="message-form" placeholder="O que você está pensando?"></textarea>
+                <input type="submit" class="add-post" value="Adicionar">
+            </form>
+    
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*reset*/
+
+/* eestilo para todos os links*/
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #18191a;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* ESTILOS DO BOTÃO HAMBURGUER*/
+
+/* Estilo geral para botão*/
+.hamburguer-bt {
+    cursor: pointer;
+
+    height: 25px;
+    width: 25px;
+
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    border: transparent;
+
+    
+}
+
+/* estilo para as linhas do menu hamburguer*/
+.hamburguer-bt .hambuguer-bt__stripe {
+    width: 100%;
+    height: 20%;
+
+    background-color: #b0b3b8;
+
+    border-radius: 15px;
+
+    transition: .5s ease-out;
+}
+
+/* estilo para a linha de cima*/
+.hamburguer-bt .hambuguer-bt__stripe.hambuguer-bt__stripe__top {
+    width: 40%;
+}
+
+/* estilo para a linha do meio*/
+.hamburguer-bt .hambuguer-bt__stripe.hambuguer-bt__stripe__middle {
+    width: 70%;
+}
+
+/* estilo da cor das linhas quando o botão estiver ativo*/
+.hamburguer-bt.active .hambuguer-bt__stripe {
+    background-color: #2d88ff;
+}
+
+/* estilo para mudar a posição e tamanho da linha de cima*/
+.hamburguer-bt.active .hambuguer-bt__stripe.hambuguer-bt__stripe__top {
+    transform: translateY(8px) rotate(-317deg);
+
+    width: 100%;
+}
+
+/* estilo para deixar linha do meio transparente*/
+.hamburguer-bt.active .hambuguer-bt__stripe.hambuguer-bt__stripe__middle {
+    opacity: 0;
+}
+
+/* estilo para mudar a posição da linha de baixo*/
+.hamburguer-bt.active .hambuguer-bt__stripe.hambuguer-bt__stripe__bottom {
+    transform: translateY(-9px) rotate(317deg);
+}
+
+/* estilo do cabeçalho*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #18191a;
+
+    border-bottom: 1px solid #393a3b;
+
+    padding: 0px 20px;
+
+}
+
+.header .logo {
+    font-size: 1.2rem;
+    font-weight: 900;
+
+    color: #2d88ff;
+
+}
+
+/* estilo do navegador de cima*/
+.header .nav-top {
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* estilo pra o botão de abrir o post*/
+.header .nav-top .open-post {
+    color: #b0b3b8;
+
+    text-transform: uppercase;
+}
+
+.header .nav-top .open-post.active {
+    color: #2d88ff;
+}
+
+/* estilo para o navegador lateral*/
+.nav-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    position: fixed;
+    left: 0;
+
+    width: 0px;
+    height: 100vh;
+
+    overflow: hidden;
+
+    background-color: #3031334d;
+
+    transition: width .15s ease;
+}
+
+/* estilo para quando o navegador esquerdo ficar ativo*/
+.nav-side.active {
+    width: 400px;
+}
+
+.nav-side.active a{
+    display: flex;
+}
+
+/* estilo para os links do navegador esquerdo*/
+.nav-side a {
+    display: none;
+    color:#e4e6eb;
+
+    padding: 15px 25px;
+
+    width: 100%;
+    align-items: center;
+
+}
+
+/* estilo hover para os links do navegador esquerdo*/
+.nav-side a:hover {
+    background-color: #393a3b;
+
+    border-radius: 18px;
+}
+
+/* estilo para os icons dentro do a*/
+.nav-side a i{
+    margin-right: 10px;
+
+    color: #2d88ff;
+}
+
+/* estilo para o feed*/
+.feed {
+    margin: 30px;
+
+    padding: 10px 40px;
+}
+
+/* estilo para o feed ir pra lateral quando o menu crescer*/
+.feed.feed__right {
+    margin-left: 400px;
+}
+
+/* estilo do post*/
+.feed .post {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    background-color: #242526;
+    color: #b0b3b8;
+
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+
+    animation: move-down .3s;
+
+}
+
+/* estilo do post em destaque*/
+.feed .post.highlighted {
+    background-color: #31373d;
+}
+
+/* estilo para as informações do usuario do post*/
+.feed .post .user-info {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+
+}
+
+/* estilo para icon do usuario que fez o post*/
+.feed .post .user-info i {
+    margin-right: 10px;
+
+    color: #2d88ff;
+}
+
+/* estilo para o nome do usuario que fez o post*/
+.feed .post .user-info .username {
+    font-weight: 800;
+}
+
+/* estilo para o titulo do post*/
+.feed .post .message {
+    word-wrap: break-word;
+}
+
+/* estilo para o overlay do modal*/
+.overlay-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+
+    backdrop-filter: blur(5px);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+/* estilo do modal pra ficar visível*/
+.overlay-modal.active {
+    display: flex;
+}
+
+/* estilo do modal*/
+.overlay-modal .modal{
+    width: 500px;
+    height: 400px;
+
+    background-color: #242526;
+
+    color: #e4e6eb;
+
+    padding: 20px;
+
+    border: 2px solid #393a3b;
+    border-radius: 10px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    animation: move-down .3s;
+}
+
+/* estilo do cabeçalho do modal*/
+.overlay-modal .modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #393a3b;
+
+    text-transform: uppercase;
+
+    padding: 0 0 10px 0;
+}
+
+/* estilo do botão de fechar o modal*/
+.overlay-modal .modal .modal-header .close-modal {
+    height: 24px;
+    width: 24px;
+
+    background-color: #3a3b3c;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+}
+
+/* estilo do icon do botão de fechar o modal*/
+.overlay-modal .modal .modal-header .close-modal i {
+    color: #e4e6eb;
+}
+
+/* estilo do form*/
+.overlay-modal .modal .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 85%;
+}
+
+/* estilos de nome do usuario e da mensagem*/
+.overlay-modal .modal .form .username-form, .message-form {
+    border: none;
+    outline: none;
+
+    width: 100%;
+
+    padding: 10px 15px;
+
+    color: #e4e6eb;
+
+}
+
+/* estilos do placeholder de nome do usuario e da mensagem*/
+.overlay-modal .modal .form .username-form::placeholder, .message-form::placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+
+    color: #e4e6eb79;
+}
+
+/* estilo so do nome*/
+.overlay-modal .modal .form .username-form {
+    border-radius: 8px;
+
+    background-color: #393a3b;
+
+}
+
+/* estilo so da mensagem*/
+.overlay-modal .modal .form .message-form {
+    resize: none;
+
+    height: 190px;
+
+    border-radius: 10px;
+
+    background-color: transparent;
+
+    font-size: x-large;
+}
+
+/* estilo do botão para adicionar post*/
+.overlay-modal .modal .form .add-post {
+    border: none;
+    outline: none;
+
+    padding: 10px;
+
+    width: 50%;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+
+    color: #fff;
+
+    border-radius: 8px;
+
+    background-color: #2d88ff;
+
+    cursor: pointer;
+
+}
+
+/* estilo hover para o botão de adicionar*/
+.overlay-modal .modal .form .add-post:hover {
+    background-color: #3e90fc;   
+}
+
+
+/* keyfrma com efeito de mover pra baixo*/
+@keyframes move-down {
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
