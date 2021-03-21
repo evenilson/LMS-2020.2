@@ -67,7 +67,7 @@
     <script>
         let todo_galeria = document.querySelector(".todo-galeria")
 
-        function criarCard(titulo, corpo, notes) {
+        function criarCard(id, titulo, corpo, notes) {
             let card = document.createElement("div");
             card.classList.add("card");
 
@@ -111,7 +111,29 @@
             card_boby_form.appendChild(form);
             form.appendChild(input);
 
+            form.addEventListener("submit", (event) => {
+                event.preventDefault();
+                postNotesAndRender(input.value, id)
+            })
+
             return card;
+        }
+
+        function postNotesAndRender(corpo, todoId){
+            axios({
+                method: "POST",
+                url: "https://server-json-lms.herokuapp.com/notes",
+                data: {
+                    corpo: corpo,
+                    todoId: todoId
+                }
+            })
+            .then((response) => {
+                getTodosAndRender()
+            })
+            .catch((error) => {
+                console.log(error)
+            })
         }
 
         function getNotesAndRender(todo) {
@@ -121,7 +143,7 @@
 
                 })
                 .then((response) => {
-                    let card = criarCard(todo.titulo, todo.corpo, response.data);
+                    let card = criarCard(todo.id, todo.titulo, todo.corpo, response.data);
 
                     todo_galeria.appendChild(card)
                 })
@@ -131,6 +153,7 @@
         }
 
         function getTodosAndRender() {
+            todo_galeria.innerHTML = "";
             axios({
                     method: "GET",
                     url: "https://server-json-lms.herokuapp.com/todos",
