@@ -48,6 +48,12 @@
         </div>
     </nav>
 
+    <form id="new-todo">
+        <input type="text" id="todo-titulo" class="form-control" placeholder="Inserir o titulo">
+        <input type="text" id="todo-corpo" class="form-control" placeholder="Inserir a tarefa">
+        <button class="btn btn-primary">Inserir</button>
+    </form>
+
     <div class="todo-galeria">
 
     </div>
@@ -115,8 +121,8 @@
 
                 })
                 .then((response) => {
-                    let card = criarCard(todo.titulo, todo.corpo,  response.data) ;
-                    
+                    let card = criarCard(todo.titulo, todo.corpo, response.data);
+
                     todo_galeria.appendChild(card)
                 })
                 .catch((error) => {
@@ -124,19 +130,48 @@
                 })
         }
 
-        axios({
-                method: "GET",
-                url: "https://server-json-lms.herokuapp.com/todos",
+        function getTodosAndRender() {
+            axios({
+                    method: "GET",
+                    url: "https://server-json-lms.herokuapp.com/todos",
 
-            })
-            .then((response) => {
-                for (let todo of response.data) {
-                    getNotesAndRender(todo);
-                }
-            })
-            .catch((error) => {
-                console.log(error)
-            })
+                })
+                .then((response) => {
+                    for (let todo of response.data) {
+                        getNotesAndRender(todo);
+                    }
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
+
+        }
+
+        getTodosAndRender();
+
+        let new_todo_form = document.getElementById("new-todo");
+        let new_todo_input_titulo = document.querySelector("#todo-titulo")
+        let new_todo_input_corpo = document.querySelector("#todo-corpo")
+
+
+        new_todo_form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            axios({
+                    method: "POST",
+                    url: "https://server-json-lms.herokuapp.com/todos",
+                    data: {
+                        titulo: new_todo_input_titulo.value,
+                        corpo: new_todo_input_corpo.value
+                    }
+                })
+                .then((response) => {
+                    getTodosAndRender();
+                })
+                .catch((error => {
+                    console.log(error);
+                }))
+        })
     </script>
 </body>
 
