@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: #d4d5d7;
+    --header-background: #2a2f32;
+    --app-background: #090e11;
+    --background-default: #131c21;
+    --background-default-active: #323739;
+    --background-default-hover: #2d3134;
+    --border: #30373b;
+    --gray: #394045;
+    --backgroud-message: #056162;
+    --green-deep: #1b9a59
+    
+}
+
 body {
     font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;   
 }
