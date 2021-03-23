@@ -33,3 +33,14 @@ body {
     background: var(--app-background);
  
  }
+
+ .app-container .app {
+    width: 900px;
+    height: 90vh;
+
+    flex-shrink: 0;
+
+    background: var(--background-default);
+    color: var(--primary);
+
+ }
