@@ -76,3 +76,21 @@ body {
     border-right: thin solid var(--border); 
 
 }
+
+.app .messages-container{
+    width: 70%;
+    height: 100%;
+
+}
+
+.app .messages-container.wallpaper {
+    
+    background: url("https://preview.redd.it/guftuc4o9ik41.jpg?width=640&crop=smart&auto=webp&s=c8ba926a1aa6f8dd50fd84bdbef23a2e650786d3");
+    
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: luminosity;
+
+    background-color: var(--background-default);
+
+}
