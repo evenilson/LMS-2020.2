@@ -38,8 +38,6 @@ body {
     width: 900px;
     height: 90vh;
 
-    flex-shrink: 0;
-
     background: var(--background-default);
     color: var(--primary);
 
