@@ -64,3 +64,15 @@ body {
 
     display: flex;
 }
+
+.content-container .groups-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 30%;
+    height: 100%;
+
+    border-right: thin solid var(--border); 
+
+}
