@@ -44,3 +44,16 @@ body {
     color: var(--primary);
 
  }
+
+ .app header {
+    height: 3rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1rem;
+
+    background: var(--header-background);
+}
