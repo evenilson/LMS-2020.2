@@ -57,3 +57,10 @@ body {
 
     background: var(--header-background);
 }
+
+.app .content-container {
+    width: 100%;
+    height: calc(100% - 3rem);
+
+    display: flex;
+}
