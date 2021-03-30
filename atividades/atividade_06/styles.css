@@ -224,7 +224,12 @@ body {
 }
 
 .messages-container .list-messages::-webkit-scrollbar {
-    width: 0px;
+    width: .2rem;
+    height: .5rem;
+}
+
+.messages-container .list-messages:hover::-webkit-scrollbar-thumb {
+    background: var(--gray);
 }
 
 .messages-container .list-messages {
