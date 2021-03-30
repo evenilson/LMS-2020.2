@@ -23,27 +23,28 @@ body {
 }
 
 .app-container {
-    width: 100%;
-    height: 100vh;
- 
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-    background: var(--app-background);
- 
- }
+   width: 100%;
+   height: 100vh;
 
- .app-container .app {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background: var(--app-background);
+
+}
+
+.app-container .app {
     width: 900px;
-    height: 90vh;
+    height: 90%;
 
     background: var(--background-default);
     color: var(--primary);
 
- }
+    box-shadow: 0 0 80px rgba(0, 0, 0, .08);
+}
 
- .app header {
+.app header {
     height: 3rem;
     width: 100%;
 
@@ -54,6 +55,15 @@ body {
     padding: 0 1rem;
 
     background: var(--header-background);
+}
+
+.app header span{
+    color: var(--green-deep);
+    font-weight: 600;
+}
+
+.app header .username span{
+    font-weight: 400;
 }
 
 .app .content-container {
@@ -75,7 +85,127 @@ body {
 
 }
 
-.app .messages-container {
+.groups-container .list-groups, .messages-container .list-messages{
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.groups-container .list-groups::-webkit-scrollbar {
+    width: .35rem;
+}
+
+.groups-container .list-groups::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+
+.list-groups .group {
+    height: 4rem;
+    width: 100%;
+
+    flex-grow: 0;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 1rem;
+
+    cursor: pointer;
+
+    animation: move-up .2s;
+}
+
+.list-groups .group.active {
+    background: var(--background-default-active);
+}
+
+.list-groups .group:hover {
+    background: var(--background-default-hover);
+}
+
+.group .group-img{
+    width: 2.5rem;
+    height: 2.5rem;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: .5rem;
+
+    border-radius: 50%;
+    
+    background: var(--app-background);
+}
+
+.group-img img {
+    width: 1rem;
+}
+
+.group .group-name{
+    height: 100%;
+    width: 80.67%;
+
+    display: flex;
+    align-items: flex-start;
+
+    padding: .7rem 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.groups-container .form-group, .messages-container .form-message{
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: .5rem;
+
+    background: var(--background-default);
+
+    animation: emerged .2s;
+
+}
+
+.form-group input, .form-message input{
+    background: var(--gray);
+
+    border: none;
+    border-radius: 20px;
+
+    height: 2rem;
+
+    color: var(--primary);
+
+    padding: 1rem;
+
+    width: 80%;
+
+}
+
+.form-group input::placeholder, .form-message input::placeholder{ 
+    color: var(--primary);
+}
+
+.form-group button, .form-message button, .form-name button{
+    background: var(--backgroud-message);
+
+    color: var(--primary);
+    font-weight: 700;
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: .5rem;
+}
+
+.app .messages-container{
     width: 70%;
     height: 100%;
 
@@ -92,3 +222,151 @@ body {
     background-color: var(--background-default);
 
 }
+
+.messages-container .list-messages::-webkit-scrollbar {
+    width: 0px;
+}
+
+.messages-container .list-messages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding: .5rem 1rem 0 1rem;
+
+}
+
+.list-messages .message {
+    right: 1rem;
+    
+    padding: .5rem;
+    position: relative;
+
+    margin-bottom: .7rem;
+
+    background: var(--backgroud-message);
+
+    border-radius: 10px;
+
+    max-width: 90%;
+
+    animation: move-up .2s;
+}
+
+.list-messages .message:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 17px solid var(--backgroud-message);
+    border-left: 3px solid transparent;
+    border-right: 16px solid transparent;
+    top: 0px;
+    right: -10px;
+}
+
+.list-messages > span {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--backgroud-message);
+
+    font-size: xx-large;
+}
+
+.message .user, .message .text {
+    display: flex;
+    align-items: flex-start;
+
+    word-wrap: break-word;
+}
+
+.message .user strong{
+    font-size: .75rem;
+}
+
+.message .text span {
+    font-size: .9rem;
+}
+
+.messages-container .form-message.close {
+    display: none;
+}
+
+.overlay-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: emerged .2s;
+}
+
+.overlay-modal.close {
+    display: none;
+}
+
+.overlay-modal .form-name {
+    padding: 1.5rem;
+
+    background: var(--background-default);
+    
+    display: flex;
+    justify-content: space-between;
+
+    border: thin solid var(--border);
+
+}
+
+.form-name input {
+    background: var(--gray);
+
+    border: none;
+    border-radius: 20px;
+
+    height: 2.5rem;
+
+    color: var(--primary);
+
+    padding: 1rem;
+
+    margin-right: 1.5rem;
+
+    width: 20rem;
+}
+
+@keyframes move-up {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes emerged {
+    form {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+
+
+
+
