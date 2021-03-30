@@ -55,6 +55,8 @@ body {
     padding: 0 1rem;
 
     background: var(--header-background);
+
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, .3);
 }
 
 .app header span{
@@ -155,6 +157,9 @@ body {
     border-bottom: 1px solid var(--border);
 }
 
+.groups-container .form-group {
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .4);
+}
 
 .groups-container .form-group, .messages-container .form-message{
     width: 100%;
@@ -169,7 +174,6 @@ body {
     background: var(--background-default);
 
     animation: emerged .2s;
-
 }
 
 .form-group input, .form-message input{
