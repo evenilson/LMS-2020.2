@@ -225,7 +225,6 @@ body {
 
 .messages-container .list-messages::-webkit-scrollbar {
     width: .2rem;
-    height: .5rem;
 }
 
 .messages-container .list-messages:hover::-webkit-scrollbar-thumb {
