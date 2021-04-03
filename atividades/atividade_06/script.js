@@ -85,14 +85,24 @@ function makeGroup(name, id){
     groupDiv.appendChild(groupImgDiv);
     groupDiv.appendChild(groupNameDiv);
 
+    let strongIdGroup = document.createElement("strong");
+    strongIdGroup.style.display = "none";
+
+    if(id == null ){
+        strongIdGroup.textContent = idGroupLast + 1;
+    }else{
+        strongIdGroup.textContent = id;
+    }
+
+    idGroupLast = parseInt(strongIdGroup.textContent);
+    
+    groupDiv.appendChild(strongIdGroup)
+
+
     groupDiv.addEventListener("click", (event) => {
         event.preventDefault();
 
-        if(id==null){
-            idGroup = idGroupLast;
-        }else{
-            idGroup = id;
-        }
+        idGroup = parseInt(strongIdGroup.textContent);
 
         getAndRenderMessages();
         formMessage.classList.remove("close");
@@ -167,8 +177,6 @@ function insertGroup(name){
         listGroupsDiv.appendChild(makeGroup(response.data.nome));
 
         groupDivs = document.querySelectorAll(".group");
-
-        idGroupLast = response.data.id;
     }).catch((error) => {
         console.log(error);
     })
