@@ -116,6 +116,10 @@ body {
     animation: move-up .2s;
 }
 
+.group strong {
+    display: none;
+}
+
 .list-groups .group.active {
     background: var(--background-default-active);
 }

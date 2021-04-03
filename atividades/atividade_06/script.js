@@ -86,7 +86,6 @@ function makeGroup(name, id){
     groupDiv.appendChild(groupNameDiv);
 
     let strongIdGroup = document.createElement("strong");
-    strongIdGroup.style.display = "none";
 
     if(id == null ){
         strongIdGroup.textContent = idGroupLast + 1;
